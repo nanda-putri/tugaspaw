@@ -12,7 +12,8 @@ include('koneksi.php');
 	$query1=mysqli_query($connect,$sql1);
 
 	if ($query1) {
-		header('location:hasil.php');
+		echo "<script> alert('data berhasil dihapus');window.location='hasil.php'</script>";
+		// header('location:hasil.php');
 	} else{
 		echo "hapus data gagal";
 	}
