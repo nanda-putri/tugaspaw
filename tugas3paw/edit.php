@@ -9,7 +9,7 @@ if (isset($_POST['submit'])){
 	$query="UPDATE tbl_036 set Nama='$Nama', Asal='$Asal', Telepon='$Telepon' WHERE NIM='$NIM'";
 	$result=mysqli_query($connect,$query);
 	if ($result) {
-		echo "<script>alert('berhasil edit');window.location='hasil.php'</script>";
+		echo "<script>alert('data berhasil di edit');window.location='hasil.php'</script>";
 		// header('location:hasil.php');
 	} else{
 		echo "gagal mengedit data";
